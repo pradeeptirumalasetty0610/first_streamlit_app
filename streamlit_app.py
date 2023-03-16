@@ -17,10 +17,10 @@ fruits_to_show=my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 streamlit.header("Fruityvice Fruit Advice!")
-fruit_choice=streamlit.text_input('Qhat fruit woulf you like info about?','Kiwi')
-streamlit.write('The user entered', fruit_choice)
+fruit_choice1=streamlit.text_input('Qhat fruit woulf you like info about?','Kiwi')
+streamlit.write('The user entered', fruit_choice1)
 
-fruityvice_response=requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
+fruityvice_response=requests.get("https://fruityvice.com/api/fruit/"+fruit_choice1)
 
 
 # write your own comment -what does the next line do? 
@@ -36,5 +36,5 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("the fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
-fruit_choice=streamlit.text_input('Qhat fruit woulf you like info about?','Kiwi')
-streamlit.text('Thanks for adding '+ fruit_choice)
+fruit_choice2=streamlit.text_input('Qhat fruit woulf you like info about?','Kiwi')
+streamlit.text('Thanks for adding '+ fruit_choice2)
